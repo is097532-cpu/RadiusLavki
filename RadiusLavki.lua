@@ -1,8 +1,8 @@
 --[[
-    RadiusLavki 5.2
+    RadiusLavki 5.3
     Идея и оригинал: Alex07 (RadiusLavki 3.0)
     Переделка: Hole_Digger
-    Автообновление и версия 5.2: xprenzzz
+    Автообновление, версии 5.2+: xprenzzz
 
     Показывает, где можно поставить переносную лавку:
       - сплошная синяя заливка земли с ровными краями там, где до всех лавок
@@ -22,7 +22,7 @@
 
 script_name('RadiusLavki')
 script_author('Alex07', 'Hole_Digger', 'xprenzzz')
-script_version('5.2')
+script_version('5.3')
 
 local imgui    = require 'mimgui'
 local encoding = require 'encoding'
