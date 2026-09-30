@@ -2,6 +2,7 @@
     RadiusLavki 5.2
     Идея и оригинал: Alex07 (RadiusLavki 3.0)
     Переделка: Hole_Digger
+    Автообновление и версия 5.2: xprenzzz
 
     Показывает, где можно поставить переносную лавку:
       - сплошная синяя заливка земли с ровными краями там, где до всех лавок
@@ -20,7 +21,7 @@
 ]]
 
 script_name('RadiusLavki')
-script_author('Alex07', 'Hole_Digger')
+script_author('Alex07', 'Hole_Digger', 'xprenzzz')
 script_version('5.2')
 
 local imgui    = require 'mimgui'
@@ -699,6 +700,11 @@ local function drawMenu()
     EndCard("##c_update")
 
     if StyledButton(u8"Сбросить все настройки", V2(-1, 36), 'danger') then resetAll() end
+
+    imgui.Dummy(V2(0, 6))
+    local credit = u8"by xprenzzz"
+    imgui.SetCursorPosX((imgui.GetContentRegionAvail().x - imgui.CalcTextSize(credit).x) / 2)
+    imgui.TextColored(C.textDim, credit)
 
     imgui.EndChild()
     imgui.PopStyleColor()
